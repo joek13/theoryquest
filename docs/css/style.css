@@ -5,6 +5,9 @@ body {
 section.container {
     padding: 2rem 1rem;
 }
+img {
+    width: 20rem;
+}
 .center {
     text-align: center;
 }
@@ -22,4 +25,12 @@ a::after {
 }
 a:visited {
     color: blue;
+}
+
+.recipe {
+    padding: 2rem;
+    background-color: #fdffde;
+    font-family: "Bradley Hand", cursive, sans-serif;
+    border-radius: 2rem;
+    margin: 2rem 2rem;
 }
