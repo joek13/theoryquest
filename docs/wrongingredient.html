@@ -1,0 +1,35 @@
+<!-- TheoryQuest Room Template -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Template</title>
+        <link href="./css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <section class="container">
+            <!-- graphic -->
+            <img src="img/brunochef.png" />
+            <!-- Room title / header-->
+            <h1>This can't be right...</h1>
+            <!-- Description of room / plot points-->
+            <p>Bruno carefully <span id="ingredient"></span>. "Hmmm," he thinks. "I can't put my finger on it, but this doesn't seem right."</p>
+            <p>"I need to follow my mom's recipe exactly if I want this Regular Language Lasagna to turn out properly. I should probably throw this out and start over."</p>
+            <p><a href="finalpage.html">Give it another try</a></p>
+            <script>
+                var ingredients = [
+                    "spreads the bechamel sauce",
+                    "spreads the ricotta cheese",
+                    "lays the lasagna noodle",
+                    "sprinkles the parmesan",
+                    "spreads the tomato sauce",
+                    "emplaces dabs of mozzarella",
+                ]
+                var urlParams = new URLSearchParams(window.location.search);
+                if(ingredients[urlParams.get("ingredient")] === undefined)
+                    document.getElementById("ingredient").innerHTML = "... wait, what? How did you get here?";
+                else
+                    document.getElementById("ingredient").innerHTML = ingredients[urlParams.get("ingredient")];
+            </script>
+        </section>
+    </body>
+</html>

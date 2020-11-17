@@ -3,6 +3,7 @@ body {
     font-family: "Lucida Console", Courier, monospace;
 }
 section.container {
+    background-color: white;
     padding: 2rem 1rem;
 }
 img {
@@ -33,4 +34,10 @@ a:visited {
     font-family: "Bradley Hand", cursive, sans-serif;
     border-radius: 2rem;
     margin: 2rem 2rem;
+}
+
+body.winner {
+    background-size: 20rem;
+    background-image: url("../img/lasagna.png");
+    background-repeat: repeat;
 }

@@ -2,18 +2,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Page Template</title>
+        <title>Making the lasagna</title>
         <link href="./css/style.css" rel="stylesheet" />
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     </head>
     <body>
         <section class="container">
             <!-- graphic -->
-            <img src="img/panik.png" />
+            <img src="img/brunochef.png" />
             <!-- Room title / header-->
-            <h1>Room title</h1>
+            <h1>Making the Lasagna</h1>
             <!-- Description of room / plot points-->
-            <p>Description</p>
-            <p><a href="">Try something else</a></p>
+            <p>With all of his ingredient alphabet at hand, Bruno is finally prepared to make some Regular Language Lasagna.<p>
+            <p>He pulls out the recipe, lays out the ingredients, and prepares a pan to cook the lasagna. Bruno scratches his head. "I can't seem to remember the order these ingredients go in.... Which do I lay down first?"</p>
+            <div class="recipe">
+                <h3>Mama's World-Famous Regular Language Lasagna</h3>
+                <p>Input Alphabet, \( \Sigma = \{ B, C, M, N, P, T \} \)</p>
+                <p>Labelling Function, \( F \): 
+                    \[
+                        \begin{align}
+                        F(B) &= \text{"Bechamel sauce"} \\
+                        F(C) &= \text{"Ricotta cheese"} \\
+                        F(N) &= \text{"Lasagna noodle"} \\
+                        F(P) &= \text{"Parmesan"} \\
+                        F(T) &= \text{"Tomato sauce"} \\
+                        F(M) &= \text{"Mozzarella cheese"} \\
+                        \end{align}
+                    \]
+                </p>
+                <h3>Lasagna Language:</h3>
+                <p>
+                    \[
+                        BNCTNBPN(CTBPN)^*BM
+                    \]
+                </p>
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Secure each of the elements of \( \Sigma \).</li>
+                    <li>Construct a lasagna \( L \) such that \( L \in \) the language specified by the regular expression above.</li>
+                </ol>
+            </div>
+            <p>Which does Bruno lay down first?</p>
+            <p><a href="lasagna1.html">\(B\), Bechamel sauce</a></p>
+            <p><a href="wrongingredient.html?ingredient=1">\(C\), Ricotta cheese</a></p>
+            <p><a href="wrongingredient.html?ingredient=2">\(N\), Lasagna noodle</a></p>
+            <p><a href="wrongingredient.html?ingredient=3">\(P\), Parmesan cheese</a></p>
+            <p><a href="wrongingredient.html?ingredient=4">\(T\), Tomato sauce</a></p>
+            <p><a href="wrongingredient.html?ingredient=5">\(M\), Mozzarella cheese</a></p>
         </section>
     </body>
 </html>
